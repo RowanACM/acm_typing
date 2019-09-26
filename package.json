@@ -1,12 +1,20 @@
 {
   "name": "acm_typing",
   "version": "1.0.0",
-  "description": "",
+  "description": "ACM Typing Game",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Rowan ACM",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RowanACM/acm_typing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RowanACM/acm_typing/issues"
+  },
+  "homepage": "https://github.com/RowanACM/acm_typing#readme"
 }
