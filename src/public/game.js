@@ -117,3 +117,30 @@ input.keydown(e => {
     }
 
 });
+
+let start = $("#start");
+start.click(() => {
+
+    start.attr("disabled", true);
+    let header = $("#header");
+    let headerText = header.children(0);
+    let countdown = $("<span>3</span>");
+    header.addClass("bg-danger text-light");
+    headerText.text("Starting in ");
+    headerText.append(countdown);
+    let t = 2;
+    let cd = setInterval(() => {
+        if (t === 0) {
+            countdown.text("");
+            headerText.text("Race!");
+            header.removeClass("bg-danger").addClass("bg-success");
+            input.attr("disabled", false);
+            $("#wait").css("display", "none");
+            $("#info").css("display", "block");
+            $("#game").css("display", "block");
+        } else {
+            countdown.text(t--);
+        }
+    }, 1000);
+
+});

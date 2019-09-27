@@ -1,6 +1,5 @@
 
 const texts = [
-    "Lake Area Tech has 30 programs of study, 15 e-degrees and serves more than 2,600 full-time, part-time and online students enrolled in the previous school year. Some of the school's longstanding programs include Agriculture, Welding, Cosmetology, Diesel, Aviation, and Nursing. The school has a 17:1 student/faculty ratio and a 99% graduate placement rate.",
     "Although the first inter-party government was now coming to an end it had a number of achievements. It proved that the country could be led by a group other than Fianna Fail. It also provided a fresh perspective after sixteen years of unbroken rule by that party.",
     "The concerto has a duration of 12 minutes and is composed in seven short connected sections, which Carter described in the program note as \"presenting the many different facets of the horn, which are most remarkable and beautiful.\"",
     "Green Pond is a small area in Polk County, Florida, south of Clermont, Florida and north of Polk City, Florida, on the edge of the Green Swamp. It was the site of a community in the 19th century. A cemetery remains.",
