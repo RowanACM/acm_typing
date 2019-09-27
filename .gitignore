@@ -159,3 +159,5 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# babel build
+lib/

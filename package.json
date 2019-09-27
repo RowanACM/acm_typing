@@ -2,9 +2,10 @@
   "name": "acm_typing",
   "version": "1.0.0",
   "description": "ACM Typing Game",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
   },
   "keywords": [],
   "author": "Rowan ACM",
@@ -18,7 +19,15 @@
   },
   "homepage": "https://github.com/RowanACM/acm_typing#readme",
   "dependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "^6.26.3",
     "express": "^4.17.1",
-    "socket.io": "2.3.0"
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-cli": "6.26.0"
   }
 }
