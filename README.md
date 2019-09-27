@@ -23,3 +23,9 @@ to make this easier
 this repository easier. If you need help with this see 
 [this git tutorial](https://www.atlassian.com/git/tutorials/using-branches).
 * **Please** remember to make your changes on a different branch!
+
+### Common problems
+* When I run `npm run build` I get an error something like this:
+`Error: Requires Babel "^7.0.0-0", but was loaded with "6.26.3".`. This is caused by Babel being weird for some reason.
+To fix the issue you have to uninstall and reinstall it with `npm uninstall @babel/core @babel/cli` and then
+`npm install --save-dev @babel/core @babel/cli`. That should resolve the issue.
