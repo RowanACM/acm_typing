@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/RowanACM/acm_typing/issues"
   },
-  "homepage": "https://github.com/RowanACM/acm_typing#readme"
+  "homepage": "https://github.com/RowanACM/acm_typing#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  }
 }
