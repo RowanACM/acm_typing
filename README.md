@@ -3,7 +3,7 @@
 This is a small typing game we'll be making to familiarize ourselves with Node and JavaScript in general.
 
 ### How to run
-1. Clone this repository using `git clone https://RowanACM/acm_typing`
+1. Clone this repository using `git clone https://github.com/RowanACM/acm_typing`
 2. Navigate into the repository
 3. Build the project using `npm run build`
 4. Start the server using `npm run start`
