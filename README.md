@@ -22,11 +22,21 @@ EDIT THESE FILES!** None of your changes in there will be saved
 * When making any changes to the project, create a new git branch before doing so. This makes merging your changes to
 this repository easier. If you need help with this see 
 [this git tutorial](https://www.atlassian.com/git/tutorials/using-branches).
-* **Please** remember to make your changes on a different branch! You should also be pulling from `upstream` regularly to avoid merge conflicts.
+* **Please** remember to make your changes on a different branch! You should also be pulling from `upstream` regularly
+to avoid merge conflicts.
 * Communicate future changes of yours with others as to avoid parallel creation
 
 ### Common problems
 * When I run `npm run build` I get an error something like this:
-`Error: Requires Babel "^7.0.0-0", but was loaded with "6.26.3".`. This is caused by Babel being weird for some reason.
-To fix the issue you have to uninstall and reinstall it with `npm uninstall @babel/core @babel/cli` and then
-`npm install --save-dev @babel/core @babel/cli`. That should resolve the issue (If you're updated to the latest version of this project this problem should not happen).
+`Error: Requires Babel "^7.0.0-0", but was loaded with "6.26.3".`
+  * This is caused by Babel being weird for some reason. To fix the issue you have to uninstall and reinstall it with
+  `npm uninstall @babel/core @babel/cli` and then `npm install --save-dev @babel/core @babel/cli`. That should
+  resolve the issue (If you're updated to the latest version of this project this problem should not happen).
+* My changes aren't being updated!
+  * Make sure you are running `npm run build` and `npm run start` before trying to see your changes.
+* All of my work was deleted when I built the project!
+  * You probably were editing files within the `dist` directory. These files are overwritten every time you build the
+  project. Do not edit these files. Do all of your work within the `src` directory.
+* I can't push my changes to github!
+  * You do not have permission to push to the `master` branch. You must push to a separate branch and submit a pull
+  request.
