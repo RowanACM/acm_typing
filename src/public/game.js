@@ -1,8 +1,5 @@
 
 const socket = io();
-socket.on("message", data => {
-    console.log(data);
-});
 
 let textbox = $("#text");
 let text;
