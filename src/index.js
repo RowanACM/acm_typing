@@ -1,4 +1,4 @@
-const texts = require("./texts.js");
+import texts from "./texts";
 
 const port = 3000;
 const express = require("express");
@@ -8,7 +8,7 @@ const path = require("path");
 const io = require("socket.io")(server);
 
 app.set("port", port);
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
 
 server.listen(port, () => {
     console.log(`Starting server on port ${port}`);

@@ -160,4 +160,4 @@ typings/
 .dynamodb/
 
 # babel build
-lib/
+dist/

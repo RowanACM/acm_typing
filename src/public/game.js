@@ -92,6 +92,8 @@ input.keydown(e => {
                 if (caret === text.length - 1) { // finished
                     clearInterval(flash);
                     clearInterval(timer);
+                    input.val("");
+                    e.preventDefault(); // without this the final character stays after clear
                 }
             }
 
