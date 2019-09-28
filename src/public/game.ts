@@ -120,8 +120,7 @@ input.keydown(e => {
 
 let start = $("#start");
 start.click(() => {
-
-    start.attr("disabled", "true");
+    start.prop("disabled", true);
     let header = $("#header");
     let headerText = header.children().first();
     let countdown = $("<span>3</span>");
@@ -134,7 +133,7 @@ start.click(() => {
             countdown.text("");
             headerText.text("Race!");
             header.removeClass("bg-danger").addClass("bg-success");
-            input.attr("disabled", "false");
+            input.prop("disabled", false);
             $("#wait").css("display", "none");
             $("#info").css("display", "block");
             $("#game").css("display", "block");

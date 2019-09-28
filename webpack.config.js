@@ -7,6 +7,7 @@ module.exports = {
     game: "./src/public/game.ts"
   },
   mode: "development",
+  devtool: 'inline-source-map',
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist/public")
