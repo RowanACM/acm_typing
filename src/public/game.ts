@@ -1,4 +1,4 @@
-
+import io from 'socket.io-client';
 const socket = io();
 
 let textbox = $("#text");
@@ -54,7 +54,7 @@ input.keydown(e => {
 
             $("#speed").text(speed.toFixed(0));
             $("#accuracy").text((accuracy * 100).toFixed(2));
-            $("#score").text((accuracy * speed).toFixed(0))
+            $("#score").text((score).toFixed(0))
 
         }, 500)
     }
@@ -121,9 +121,9 @@ input.keydown(e => {
 let start = $("#start");
 start.click(() => {
 
-    start.attr("disabled", true);
+    start.attr("disabled", "true");
     let header = $("#header");
-    let headerText = header.children(0);
+    let headerText = header.children().first();
     let countdown = $("<span>3</span>");
     header.addClass("bg-danger text-light");
     headerText.text("Starting in ");
@@ -134,7 +134,7 @@ start.click(() => {
             countdown.text("");
             headerText.text("Race!");
             header.removeClass("bg-danger").addClass("bg-success");
-            input.attr("disabled", false);
+            input.attr("disabled", "false");
             $("#wait").css("display", "none");
             $("#info").css("display", "block");
             $("#game").css("display", "block");
