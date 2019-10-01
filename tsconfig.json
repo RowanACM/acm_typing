@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		// Target latest version of ECMAScript.
+		"target": "esnext",
+		"module": "commonjs",
+		// Search under node_modules for non-relative imports.
+		"moduleResolution": "node",
+		// Process & infer types from .js files.
+		"allowJs": true,
+		// Disable strictest settings like strictNullChecks & noImplicitAny.
+		"strict": false,
+		// Import non-ES modules as default imports.
+		"esModuleInterop": true,
+		// Configure TypeScript to output inline source maps to our compiled JavaScript files
+		"sourceMap": true,
+		// Output directory
+		"outDir": "dist"
+	},
+	"include": [
+		"src/index.ts"
+	]
+}
